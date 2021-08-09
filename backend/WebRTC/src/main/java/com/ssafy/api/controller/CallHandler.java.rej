@@ -1,0 +1,14 @@
+diff a/backend/WebRTC/src/main/java/com/ssafy/api/controller/CallHandler.java b/backend/WebRTC/src/main/java/com/ssafy/api/controller/CallHandler.java	(rejected hunks)
+@@ -103,10 +103,11 @@
+ 			for (UserSession audience : registry.getUsersByName().values()) {
+ 				audience.linkImageOverlayPipeline(presenter, presentationManager.getImageOverlayFilter());
+ 			}
++			break;
+ 		}
+ 		case "start": {
+ 			log.trace("start");
+-			presentationManager.start();
++			presentationManager.start(user);
+ 			break;
+ 		}
+ 		case "stop": {

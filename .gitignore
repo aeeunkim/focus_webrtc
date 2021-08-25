@@ -23,6 +23,8 @@
 /backend/springboot/src/main/resources/static/
 /backend/springboot/target/
 
+/S05P13A107.git/
+
 ### Java ###
 # Compiled class file
 .class

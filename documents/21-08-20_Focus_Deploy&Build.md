@@ -82,7 +82,7 @@
     3. cd ~/focus/webrtc
     4. mvn package
 3. Service 등록을 위해 .service 작성
-    1. vi /etc/systemd/focus-api.service
+    1. vi /etc/systemd/system/focus-api.service
     2. 아래 내용을 작성
 
         ```bash
@@ -101,7 +101,7 @@
         WantedBy=multi-user.target
         ```
 
-    3. vi /etc/systemd/focus-kurento.service
+    3. vi /etc/systemd/system/focus-kurento.service
     4. 아래 내용을 작성
 
         ```bash
